@@ -8,12 +8,14 @@ function checkVowel(string){
 
             if (string[j] === vocal[i]){
                 return true
+            } else {
+                return false
             }
         }
     }
-    return false
+    // return false
 }
-console.log(checkVowel('brmmmm'))
-console.log(checkVowel('aueioae'))
-console.log(checkVowel('qwrtuipm'))
-console.log(checkVowel('qrqtqyqtqyrytyhgnvm'))
+console.log(checkVowel('brmmmm')) // false
+console.log(checkVowel('aueioae')) //true
+console.log(checkVowel('qwrtuipm')) //false
+console.log(checkVowel('qrqtqyqtqyrytyhgnvm')) //false
