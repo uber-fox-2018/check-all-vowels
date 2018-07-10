@@ -7,11 +7,11 @@ const checkAllVowel = (input) => {
       allString += input[i]
     }
   }
-
-  for (let i = 0; i < allString.length; i++) {
+  let allStringLowerCase = allString.toLowerCase()
+  for (let i = 0; i < allStringLowerCase.length; i++) {
     let isVowel = false
     for (let j = 0; j < vowels.length; j++) {
-      if (allString[i] === vowels[j]) {
+      if (allStringLowerCase[i] === vowels[j]) {
         isVowel = true
       }
     }
@@ -26,3 +26,4 @@ console.log(checkAllVowel('aaaiiuu')); //true
 console.log(checkAllVowel('aaaiiuu hbcaja')); //false
 console.log(checkAllVowel('ari supriatna')); //false
 console.log(checkAllVowel('aa ooo eee uu  ')); //true
+console.log(checkAllVowel('AAA uu IIUu')); // true
