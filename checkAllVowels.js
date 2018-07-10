@@ -2,6 +2,8 @@
 function checkAllVowels(str) {
     let vowels = ['a', 'i', 'u', 'e', 'o'];
 
+    str = str.toLowerCase();
+
     if(str.length === 0) return false;
 
     for(let i = 0; i < str.length; i++)
@@ -13,4 +15,5 @@ function checkAllVowels(str) {
 console.log('abcde', checkAllVowels('abcde'));
 console.log('oeuia', checkAllVowels('oeuia'));
 console.log('', checkAllVowels(''));
-console.log('i oe u', checkAllVowels('i oe u'));
+console.log('i Oe U', checkAllVowels('i Oe U'));
+
