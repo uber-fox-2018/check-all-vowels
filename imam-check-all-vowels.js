@@ -1,8 +1,9 @@
 function checkVowel(words) {
-  let vowel = 'aeiou';
+  words = words.toLowerCase();
+  const vowel = 'aeiou';
   for(let i = 0; i < vowel.length; i++) {
     for(let j = 0; j < words.length; j++) {
-      if(vowel[i].toLowerCase() === words[j].toLowerCase() || vowel[i].toUpperCase() === words[j].toUpperCase()) {
+      if(vowel[i] === words[j].toLowerCase()) {
         return true;
       }
     }
@@ -12,5 +13,5 @@ function checkVowel(words) {
 
 }
 
-console.log(checkVowel('bbY'));
+console.log(checkVowel('bbYA'));
 console.log(checkVowel('aeieo'));
