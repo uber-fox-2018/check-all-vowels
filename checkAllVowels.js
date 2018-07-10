@@ -1,21 +1,21 @@
 // your code here
 function checkVowel(string) {
     let vowels = ['a','i','u','e','o']
-    let checker = 0;
+    let newString = ''
 
     for (let i = 0; i < string.length; i++) {
         for (let j = 0; j < vowels.length; j++) {
             if (string[i] === vowels[j] ) {
-                checker++;
+               newString += vowels[j]
             }
         }
-
-        if (checker === 0) {
-           return false 
-        }
-
     }
-    return true;
+    
+    if (newString.length === string.length) {
+        return true 
+     }else {
+        return false
+     }
 }
 
 console.log(checkVowel('test'));
