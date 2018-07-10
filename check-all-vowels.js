@@ -1,5 +1,5 @@
 function checkVowel(str){
-	const kamus = "aiueo";
+	const kamus = "aiueo ";
 	if(str.length === 0){
 		return true;
 	}
@@ -11,3 +11,6 @@ function checkVowel(str){
 		return allVowel && checkVowel(str.slice(1));
 	}	
 }
+
+console.log(checkVowel("hei"));
+console.log(checkVowel("ei   "));
